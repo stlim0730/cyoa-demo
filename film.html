@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Your Website Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">REMIX <strong class="text-danger">NETFLIX</strong> <em class="text-success">w</em><em class="text-warning">i</em><em class="text-info">t</em><em class="text-danger">h</em> <em class="text-primary">c</em><em class="text-warning">o</em><em class="text-success">l</em><em class="text-info">o</em><em class="text-primary">r</em></a>
+      </div>
+    </nav>
+    
+    <div class="container">
+      <h1 class="text-muted">Choose a film</h1><br />
+    </div>
+    
+    <div class="container">
+      <div class="row">
+    
+      <button type="button" data-genre="action" class="card mb-3 col-lg-4 col-md-4 col-sm-4 no-padding film-button">
+        <h3 class="card-header">Action</h3>
+        <img src="img/jasonbourne.jpg" width="100%" />
+        <div class="card-body">
+          <p class="card-text">
+            Action movies, such as<br />
+            Die Hard (1988), Mission: Impossible (1996), and Jason Bourne (2016)
+          </p>
+        </div>
+      </button>
+      
+      <button type="button" data-genre="comedy" class="card mb-3 col-lg-4 col-md-4 col-sm-4 no-padding film-button">
+        <h3 class="card-header">Comedy</h3>
+        <img src="img/homealone.jpg" width="100%" />
+        <div class="card-body">
+          <p class="card-text">
+            Comedy movies, such as<br />
+            Home Alone (1990), Super Bad (2007), and Borat (2006)
+          </p>
+        </div>
+      </button>
+      
+      <button type="button" data-genre="romance" class="card mb-3 col-lg-4 col-md-4 col-sm-4 no-padding film-button">
+        <h3 class="card-header">Romance</h3>
+        <img src="img/twilight.jpg" width="100%" />
+        <div class="card-body">
+          <p class="card-text">
+            Romance movies, such as<br />
+            Titanic (1997), Love Actually (2003), and Twilight (2008)
+          </p>
+        </div>
+      </button>
+      
+      </div>
+    </div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/js.cookie.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $('.film-button').click(function(e) {
+        Cookies.set('film', $(this).data('genre'));
+        window.location.href = 'gender.html';
+      });
+    </script>
+    
+  </body>
+</html>
