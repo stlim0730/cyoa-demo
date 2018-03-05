@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>REMIX NETFLIX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+  </head>
+  
+  <body>
+    
+    <div class="container" style="height: 50vh; padding-top: 50px">
+      <div class="jumbotron v-middle">
+        <h1 class="display-3">
+          REMIX <strong class="text-danger">NETFLIX</strong> <em class="text-success">w</em><em class="text-warning">i</em><em class="text-info">t</em><em class="text-danger">h</em> <em class="text-primary">c</em><em class="text-warning">o</em><em class="text-success">l</em><em class="text-info">o</em><em class="text-primary">r</em>
+        </h1>
+        <p class="lead">
+          What if the lead in the most popular movies looked more like you?
+        </p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg btn-block" id="start-button"
+            href="film.html" role="button">Let's Find Out</a>
+        </p>
+      </div>
+    </div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/js.cookie.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $('#start-button').click(function(e) {
+        // Reset the data
+        Cookies.set('cyoa', {});
+      });
+    </script>
+  </body>
+</html>
