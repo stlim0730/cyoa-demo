@@ -23,7 +23,7 @@
     <div class="container">
       <div class="row">
     
-      <button type="button" data-genre="action" class="card mb-3 col-lg-4 col-md-4 col-sm-4 no-padding film-button">
+      <button type="button" data-film="action" class="card mb-3 col-lg-4 col-md-4 col-sm-4 no-padding film-button">
         <h3 class="card-header">Action</h3>
         <img src="img/jasonbourne.jpg" width="100%" />
         <div class="card-body">
@@ -34,7 +34,7 @@
         </div>
       </button>
       
-      <button type="button" data-genre="comedy" class="card mb-3 col-lg-4 col-md-4 col-sm-4 no-padding film-button">
+      <button type="button" data-film="comedy" class="card mb-3 col-lg-4 col-md-4 col-sm-4 no-padding film-button">
         <h3 class="card-header">Comedy</h3>
         <img src="img/homealone.jpg" width="100%" />
         <div class="card-body">
@@ -45,7 +45,7 @@
         </div>
       </button>
       
-      <button type="button" data-genre="romance" class="card mb-3 col-lg-4 col-md-4 col-sm-4 no-padding film-button">
+      <button type="button" data-film="romance" class="card mb-3 col-lg-4 col-md-4 col-sm-4 no-padding film-button">
         <h3 class="card-header">Romance</h3>
         <img src="img/twilight.jpg" width="100%" />
         <div class="card-body">
@@ -64,7 +64,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
       $('.film-button').click(function(e) {
-        Cookies.set('film', $(this).data('genre'));
+        Cookies.set('film', $(this).data('film'));
         window.location.href = 'gender.html';
       });
     </script>
