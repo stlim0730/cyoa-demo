@@ -1,0 +1,17 @@
+.text-center {
+  text-align: center !important;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.v-middle {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
