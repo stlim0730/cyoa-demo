@@ -1,1 +1,1 @@
-# cyoa-demo
+# glide-demo
